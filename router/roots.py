@@ -7,4 +7,7 @@ route = APIRouter()
 
 @route.get(HEALTH)
 async def health():
-  return {"message": "Hello World"}
+  # add all dependency to this health check
+  return {
+    "message": "Hello World"
+  }
